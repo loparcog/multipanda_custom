@@ -24,7 +24,7 @@ public:
     move_group->setPlanningTime(1.0);
     // Make floor
     geometry_msgs::msg::Pose poseFloor;
-    poseFloor.position.z = -0.1;             // top face is at z-(h/2)
+    poseFloor.position.z = -0.05;             // top face is at z-(h/2)
     poseFloor.orientation.w = 1.0;
 
     createCollisionBox("floor", 2.0, 2.0, 0.10, poseFloor);

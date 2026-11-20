@@ -255,7 +255,7 @@ def generate_launch_description():
             name='tf2listener',
             parameters=[
                 # panda_link8 for end of arm (target in sim), panda_hand_tcp for end tip
-                {"target_frame": "panda_link8"}
+                {"target_frame": "panda_hand_tcp"},
             ]
         ),
         IncludeLaunchDescription(
